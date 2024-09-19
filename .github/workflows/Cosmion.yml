@@ -84,7 +84,6 @@ jobs:
           git config --global user.email 'gh-actions@noreply.github.com'
           git add ${{ steps.job_variables.outputs.firmware-name }}
           git commit -m "Initialized ${{ steps.job_variables.outputs.firmware-name }} using GitHub Actions"
-          git push
       - name: Setup Python
         uses: actions/setup-python@v1
         with:
